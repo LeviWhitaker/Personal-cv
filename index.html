@@ -6,34 +6,42 @@
     <title>Levi Whitaker</title>
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href = "css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
+
 </head>
 <body>
+    
     <nav>
         <p>Levi A. Whitaker</p>
         <p><a href ="contact.html">Contact Levi</a></p>
     </nav>
     <section class = "splash">
-        <h1>Levi Ashton Whitaker</h1>
-        <img src="images/Head_shot.jpg" alt="Levi's Headshot" height="150">
-        <p> 3151 Newborn Road &bull; Mansfield, Georgia 2024 &bull; 706.717.1677 &bull; law96096@uga.edu</p>
-        <p> I'm lifelong tinkerer and driven individual who's interested in AI and Cybersecurity.</p>
+        <h1 class ="anton-regular">Levi Ashton Whitaker</h1>
+        <img src="images/Head_shot.jpg" alt="Levi's Headshot" height="150" class = "headshot">
+        <p class = "address"> 3151 Newborn Road &bull; Mansfield, Georgia 2024 &bull; 706.717.1677 &bull; law96096@uga.edu</p>
+        <p class = "tagline"> I'm lifelong tinkerer and driven individual who's interested in AI and Cybersecurity.</p>
     </section>
     <hr>
     <section>
-        <h2>Education</h2>
-        <p>University of Georgia, School of Computing, Bachelor of Science in Computer Science December 2025, 3.3/4.00 Courses: Introduction to Computing and Programming, Data Structures, Discrete Math, 
+        <h2 class="new-amsterdam">Education</h2>
+        <p class = "bubble">University of Georgia, School of Computing, Bachelor of Science in Computer Science December 2025, 3.3/4.00 Courses: Introduction to Computing and Programming, Data Structures, Discrete Math, 
             Database Management, Software Development, Systems Computing, Web Programming, </p>
      </section>
      <section>
-        <h2>Honors and Awards</h2>
-        <dl>
-            <dt>Hope Scholarship Recipient</dt><dd>Fall 2021-2025</dd>
-            <dt>UGA Hacks First Place</dt><dd>Spring 2025</dd>
+        <h2 class="new-amsterdam">Honors and Awards</h2>
+        <dl class = "bubble">
+            <dt>Hope Scholarship Recipient</dt><dd style = "font-size: 12px;">Fall 2021-2025</dd>
+            <dt>UGA Hacks First Place</dt><dd style = "font-size: 12px;">Spring 2025</dd>
         </dl>
     </section>
     <section>
-        <h2>Skills</h2>
-        <ul>
+        <h2 class="new-amsterdam">Skills</h2>
+        <ul class = "bubble" style="list-style-type: circle;">
             <li>Programming Langauges: Java, C, C++, HTML, CSS, Javscript </li>
             <li>Frameworks/Libraries: Node.js, React</li>
             <li>Database: MongoDB </li>
@@ -41,58 +49,70 @@
         </ul>
     </section>
     <section>
-        <h2>Leadership and experience</h2>
-        <dl>
-            <dt>Hallie Janes Catering Wait Staff</dt>
-            <dd> Fall 2021 - Present</dd>
+        <h2 class="new-amsterdam">Leadership and experience</h2>
+        <dl class = "bubble">
+            <dt>Agriculture Robotics Research Team</dt>
+            <dd style = "font-size: 12px;"> Fall 2024 - Present</dd>
             <dt> <a href = "https://batteriesplus.com"> Batteries+ Repair Technician</a></dt>
-            <dd>03/2023 - 07/2023</dd>
+            <dd style = "font-size: 12px;">Spring 2023 - Fall 2023</dd>
         </dl>
     </section>
+    <hr>
     <section>
-        <h2> Projects</h2>
-        <h3>Park Finder App</h3>
-        <ul>
-            <li>
-                Worked individually to create a park search application using Java
-                backend and a Javafx front end tools. 
-            </li>
-            <li>
-                Deveoped a user-friendly interface that connected users to local parks, using several web API's and integrated search query data 
-                into app functionality prociding relevant information about the park. 
-            </li>
-            <li>
-                Used git version control to add new features and track changes, uploading the finished product
-                to github for future collaborators to view. 
-            </li>
-        </ul>
-        <h3>E-Commerce Website</h3>
-        <ul>
-            <li> Created website with CRUD capabilities and visually appealing graphical user interface that 
-                let users post sale listings similar to facebook marketplace. 
-            </li>
-            <li>
-                Improved front end web development skills implementing javascript animations as well and CSS styling and HTML 
-                base templating. 
-            </li>
-            <li>
-                Used mongoDB to store user data and update the site, removing old listings and keeping track of user data. 
-            </li>
-        </ul>
-        <h3> C File Comparer</h3>
-        <ul>
-            <li> Developed in a unix enivronment connecting to remote school server to create a byte by byte 
-                .txt file comparer using low level c system calls (pipe, fork, exec, etc.) 
-            </li>
-            <li>
-                Used multithreaded process and dynamic memory allocation to conserve space and processing time in order to read files
-                and write the differences found in input files.
-            </li>
-            <li>
-                Tracked changes using git version control and used scripting to create make files for user user-friendly
-                implementation. 
-            </li>
-        </ul>
+        <div class = "three-col">
+            <h2 class="anton-regular" style = "margin-left: 35%;" > Projects </h2>
+            <div class = "card">
+                <img src="images/parks.png" alt = "Park Picture">
+                <h3>Park Finder App</h3>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        Worked individually to create a park search application using Java
+                        backend and a Javafx front end tools. 
+                    </li>
+                    <li>
+                        Deveoped a user-friendly interface that connected users to local parks, using several web API's and integrated search query data 
+                        into app functionality prociding relevant information about the park. 
+                    </li>
+                    <li>
+                        Used git version control to add new features and track changes, uploading the finished product
+                        to github for future collaborators to view. 
+                    </li>
+                </ul>
+            </div>
+            <div class = "card">
+                <img src ="images/ecommerce.png" alt = "Ecommerce Picture">
+                <h3>E-Commerce Website</h3>
+                <ul style="list-style-type: circle;">
+                    <li> Created website with CRUD capabilities and visually appealing graphical user interface that 
+                        let users post sale listings similar to facebook marketplace. 
+                    </li>
+                    <li>
+                        Improved front end web development skills implementing javascript animations as well and CSS styling and HTML 
+                        base templating. 
+                    </li>
+                    <li>
+                        Used mongoDB to store user data and update the site, removing old listings and keeping track of user data. 
+                    </li>
+                </ul>
+            </div>
+            <div class = "card">
+                <img src = "images/comparer.png" alt = "C Picture">
+                <h3> C File Comparer</h3>
+                    <ul style="list-style-type: circle;">
+                        <li> Developed in a unix enivronment connecting to remote school server to create a byte by byte 
+                            .txt file comparer using low level c system calls (pipe, fork, exec, etc.) 
+                        </li>
+                        <li>
+                            Used multithreaded process and dynamic memory allocation to conserve space and processing time in order to read files
+                            and write the differences found in input files.
+                        </li>
+                        <li>
+                            Tracked changes using git version control and used scripting to create make files for user user-friendly
+                            implementation. 
+                        </li>
+                    </ul>
+                </div>  
+        </div>
     </section>
     <footer>
         &copy;<a href="contact.html">Levi A. Whitaker</a> &nbsp; &bull;  &nbsp;
